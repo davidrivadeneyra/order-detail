@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correo Electrónico</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+            table, tr, td {
+                display: block !important;
+                width: 100% !important;
+            }
+            td {
+                padding: 0 !important;
+                width: 100% !important;
+                margin-bottom: 8px !important;
+                text-align: left !important;
+            }
+
+            .article-style {
+                width: 100% !important;
+            }
+
+            .article-img {
+                width: 50% !important;
+                height: auto !important;
+                text-align: left;
+            }
+
+            .text-left {
+                text-align: left !important;
+            }
+
+            .main-wrapper {
+                padding: 16px !important;
+            }
+            .content-wrapper {
+                padding: 24px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #F2F4F6; font-family: Arial, sans-serif; color: #434343;">
-    <div style="max-width: 664px; margin: 0 auto; padding: 32px; background-color: #F2F4F6; box-sizing: border-box;">
+    <div class="main-wrapper" style="max-width: 664px; margin: 0 auto; padding: 32px; background-color: #F2F4F6; box-sizing: border-box;">
 
         <!-- Contenedor Secundario -->
-        <div style="padding: 48px; background-color: #FFFFFF;">
+        <div class="content-wrapper" style="padding: 48px; background-color: #FFFFFF;">
 
             <!-- Primera Sección -->
             <img src="adquiria-banner.png" alt="Compra realizada - Adquiria" style="width: 100%; height: auto; max-width: 568px; margin-bottom: 40px;">
@@ -143,29 +178,28 @@
 <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
     <tr>
         <!-- Columna 01: Imagen cuadrada -->
-        <td style="width: 10%; padding-right: 16px; text-align: center; vertical-align: top;">
-            <img src="product-01.jpg" alt="Producto" style="width: 56px; height: 56px; object-fit: cover; border-radius: 8px;">
+        <td class="article-style" style="width: 10%; padding-right: 16px; text-align: center; vertical-align: top;">
+            <img class="article-img" src="product-01.jpg" alt="Producto" style="width: 56px; height: 56px; object-fit: cover; border-radius: 8px;">
         </td>
 
         <!-- Columna 02: Información del Producto -->
-        <td style="width: 40%; padding-right: 16px; vertical-align: top;">
+        <td class="article-style" style="width: 40%; padding-right: 16px; vertical-align: top;">
             <a href="#" style="font-size: 14px; color: #434343; ">2Pcs Headset Replacement Ear Cushion Headset Earmuff for Sony WH-CH710N CH720N</a>
             <div style="font-size: 14px; color: #929AA5; margin-top: 16px;margin-bottom: 4px; ">SKU: <span>123456789</span></div>
             <div style="font-size: 14px; color: #505C6D; margin-bottom: 4px;font-weight: bold;">Talla: M</div>
             <div style="font-size: 14px; color: #505C6D; margin-bottom: 32px;font-weight: bold;">01</div>
         </td>
-        <td style="width: 10%; padding-right: 16px; vertical-align: top;">
-            <div style="font-size: 14px; color: #505C6D; margin-bottom: 32px; text-align: end;">1</div>
+        <td class="article-style" style="width: 10%; padding-right: 16px; vertical-align: top;">
+            <div class="text-left" style="font-size: 14px; color: #505C6D; margin-bottom: 32px; text-align: end;">1</div>
         </td>
-        <td style="width: 40%; vertical-align: top;">
-            <div style="font-size: 14px; font-weight: bold; font-style: #6B7583; margin-bottom: 4px; text-align: end;">Costo: <span>USD 1.000.00</span></div>
-            <div style="font-size: 14px; color: #6B7583; margin-bottom: 32px;text-align: end;">Costo de envío: <span>USD 0</span></div>
+        <td class="article-style" style="width: 40%; vertical-align: top;">
+            <div class="text-left"  style="font-size: 14px; font-weight: bold; font-style: #6B7583; margin-bottom: 4px; text-align: end;">Costo: <span>USD 1.000.00</span></div>
+            <div class="text-left"  style="font-size: 14px; color: #6B7583; margin-bottom: 32px;text-align: end;">Costo de envío: <span>USD 0</span></div>
         </td>
     </tr>
 </table>
-<section style="width: 100%; background-color: #F4F5F6; border-radius: 8px;"><p style="font-size: 16px; font-weight: bold; color: #434343; line-height: 1.5; padding: 16px; text-align: right;">Importe tota: <span>USD 1.199,00</span></p></section>
-
-
+<section style="width: 100%; background-color: #F4F5F6; border-radius: 8px;">
+    <p class="text-left"  style="font-size: 16px; font-weight: bold; color: #434343; line-height: 1.5; padding: 16px; text-align: right;">Importe total: <span>USD 1.199,00</span></p></section>
         </div>
     </div>
 </body>
